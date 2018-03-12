@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Plus ou Moins</title>
+</head>
+<body>
+    <main>
+        <h1>Le jeu du Plus ou Moins</h1>
+        <h2>Choisissez le nombre de joueurs :</h2>
+        <form>
+            <button type="button" onclick="lancement(1); return false;">1 joueur</button>
+            <button type="button" onclick="lancement(2); return false;">2 joueurs</button>
+        </form>
+        <h2 id="modeJeu"></h2>
+        <br>
+        <h3 id="jeu"></h3>
+
+        <form>
+            <input id="nombre" type="textarea" placeholder="entre un nombre" >
+            <button onclick="partie1(); return false;">Tente</button>
+        </form>
+        <br>
+        <p id="para"></p>
+        <p>Nombre d'essais :</p>
+        <p id="nbCoups"></p>
+        <p>Vous avez déjà joué :</p>
+        <p id="histo"></p>
+        <p id="score"></p>
+        <h3 id="scoreFinal"></h3>
+        <h3 id="scorePartieJ1"></h3>
+        <h3 id="scorePartieJ2"></h3>
+    </main> 
+    <script src="script.js"></script>
+</body>
+</html>
